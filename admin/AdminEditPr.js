@@ -2,10 +2,10 @@ import axios from "axios";
 import { Header, router, useEffect, useState } from "../component/Setup";
 
 const AdminEditPr = ({ data: { id } }) => {
-    const [get_ct,set_ct]=useState([]);
-    useEffect(function(){
-        axios.get("http://localhost:3000/category").then(({data})=>set_ct(data));
-    },[]);
+  const [get_ct, set_ct] = useState([]);
+  useEffect(function () {
+    axios.get("http://localhost:3000/category").then(({ data }) => set_ct(data));
+  }, []);
   const [get, set] = useState({});
   console.log(id);
   useEffect(function () {
@@ -13,7 +13,7 @@ const AdminEditPr = ({ data: { id } }) => {
       .get("http://localhost:3000/projects/" + id)
       .then(({ data }) => set(data));
   }, []);
-  
+
   useEffect(function () {
     const click = document.querySelector("#idForm");
     click.addEventListener("submit", async (e) => {
@@ -23,8 +23,8 @@ const AdminEditPr = ({ data: { id } }) => {
       const content = document.querySelector("#content");
       const select = document.querySelector("#select");
       e.preventDefault();
-      const okImage=await addImage(img.files);
-      const date=new Date();
+      const okImage = await addImage(img.files);
+      const date = new Date();
       const object = {
         id,
         name: name.value,
@@ -32,11 +32,16 @@ const AdminEditPr = ({ data: { id } }) => {
         author: author.value,
         content: content.value,
         select: select.value,
-        time:date.getHours()+":"+date.getMinutes()+"`:"+date.getSeconds()+"____"+date.getDate() +"/"+ date.getMonth()*2+"/"+date.getFullYear(),
+        time: date.getHours() + ":" + date.getMinutes() + "`:" + date.getSeconds() + "____" + date.getDate() + "/" + date.getMonth() * 2 + "/" + date.getFullYear(),
       };
       axios.put("http://localhost:3000/projects/" + id, object);
       router.navigate("/admin");
     });
+    const state = document.getElementById("img");
+    const idImg = document.getElementById("idImg");
+    state.onchange = (e) => {
+      idImg.src = URL.createObjectURL(state.files[0]);
+    }
   });
   const addImage = async (files) => {
     // console.log(files);
@@ -70,7 +75,8 @@ const AdminEditPr = ({ data: { id } }) => {
                 <div class="flex space-x-5">
                     <div class="">
                         <div class="mb-3">
-                            <input required class="form-control bg-gray-100 h-[356px] w-56 vo" type="file" multiple id="img">
+                            <input required class="form-control mt-[20px] bg-gray-100 h-[156px] w-56 vo" type="file" multiple id="img">
+                            <img class="h-[156px] w-56 mt-[24px] border-4 rounded-lg" id="idImg" src="" alt="Waitting....">
                         </div>
                     </div>
                     <div class="w-[810px]">
@@ -89,9 +95,9 @@ const AdminEditPr = ({ data: { id } }) => {
                         <p class="text-white">Categories:</p>
                         <select required class="form-select bg-gray-100" aria-label="Default select example" id="select">
                             ${get_ct.map(
-                              (xem) =>
-                                `<option value="${xem.id}">${xem.name}</option>`
-                            )}
+    (xem) =>
+      `<option value="${xem.id}">${xem.name}</option>`
+  )}
                         </select>
                     </div>
                 </div>

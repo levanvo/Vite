@@ -31,7 +31,19 @@ const Categories = () => {
                 // console.log(screening);
             }); 
         };
+        // Search
+        document.querySelector(".search").addEventListener("click",(e)=>{
+            e.preventDefault();
+            const valueSearch=document.querySelector("#valueSearch").value;
+            // console.log(valueSearch.toUpperCase());
+            get_pr.map((take)=>{
+                if(take.name.toUpperCase()==valueSearch.toUpperCase()){
+                    window.location.href=`/post_detail/${take.id}`;
+                };
+            });
+        });
     });
+
     console.log(get_data);
     const Show_data = ({ get_data }) => {
         if (get_data.length > 0) {
@@ -60,7 +72,14 @@ const Categories = () => {
                 }).join("")}
             </div>`
         }else{
-            return`<div class=" grid grid-cols-3">
+            return`
+            <div class="mb-3">
+                <form>
+                    <input class="w-[700px] h-[36px] rounded-l-md outline-0 pl-2 text-black inputSearch" type="text" placeholder=" ...input Search" id="valueSearch">
+                    <button class="w-[140px] h-[35px]  rounded-r-md search">Search</button>
+                </form>
+            </div>
+            <div class=" grid grid-cols-3">
                 ${get_pr.map((take)=>{
                     return`
                         <a href="post_detail/${take.id}" class="w-[250px] h-32 col-span-1 mb-4 mx-auto rounded-md"><div class="bg-gray-200 w-[250px] h-32 col-span-1 mb-4 mx-auto rounded-md text-gray-600 show_box">

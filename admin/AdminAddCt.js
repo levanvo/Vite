@@ -17,6 +17,12 @@ const AdminAddCt=()=>{
             router.navigate("/admin");
             // console.log(object);
         });
+
+        const state=document.getElementById("img");
+        const idImg=document.getElementById("idImg");
+        state.onchange=(e)=>{
+            idImg.src=URL.createObjectURL(state.files[0]);
+        }
     });
     const addImage = async (files) => {
       // console.log(files);
@@ -45,8 +51,11 @@ const AdminAddCt=()=>{
         ${Header()}
         <br>
         <h1 class="text-4xl ml-8 mb-5">Add Category more</h1>
-        <div class="w-[1100px] mx-auto">
-            <form id="idForm" class="">
+        <div class="w-[1100px] space-x-20 mx-auto flex">
+            <div class="">
+                <img class="h-[250px] w-[250px] border-4 rounded-lg" id="idImg" src="" alt="Waitting....">
+            </div>
+            <form id="idForm" class="w-[700px]">
                 <div class="">
                     <div class="mb-3">
                         <input required class="form-control bg-gray-100" type="file" id="img">
@@ -56,7 +65,7 @@ const AdminAddCt=()=>{
                         <input required type="text" class="form-control bg-gray-100" placeholder="name category" id="name">
                     </div>
                 </div>
-                <div class="text-center button_shell_control">
+                <div class="text-center button_shell_control mt-16">
                     <button type="submit" class="button_control w-44">Continue</button>
                 </div>
             </form>

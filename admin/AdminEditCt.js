@@ -1,26 +1,31 @@
 import axios from "axios";
 import { Header, router, useEffect, useState } from "../component/Setup";
 
-const AdminEditCt = ({data:{id}}) => {
-    const [get,set]=useState({});
-    useEffect(function(){
-        axios.get("http://localhost:3000/category/"+id).then(({data})=>set(data));
-    },[]);
+const AdminEditCt = ({ data: { id } }) => {
+  const [get, set] = useState({});
+  useEffect(function () {
+    axios.get("http://localhost:3000/category/" + id).then(({ data }) => set(data));
+  }, []);
   useEffect(function () {
     const click = document.querySelector("#idForm");
-    click.addEventListener("submit",async (e) => {
+    click.addEventListener("submit", async (e) => {
       const name = document.querySelector("#name");
       const img = document.querySelector("#img");
       e.preventDefault();
-      const okImage=await addImage(img.files);
+      const okImage = await addImage(img.files);
       const object = {
         id,
         name: name.value,
         img: okImage,
       };
-      axios.put("http://localhost:3000/category/"+id, object);
+      axios.put("http://localhost:3000/category/" + id, object);
       router.navigate("/admin");
     });
+    const state = document.getElementById("img");
+    const idImg = document.getElementById("idImg");
+    state.onchange = (e) => {
+      idImg.src = URL.createObjectURL(state.files[0]);
+    }
   });
   const addImage = async (files) => {
     // console.log(files);
@@ -49,21 +54,24 @@ const AdminEditCt = ({data:{id}}) => {
         ${Header()}
         <br>
         <h1 class="text-4xl ml-8 mb-5">Update Category</h1>
-        <div class="w-[1100px] mx-auto">
-            <form id="idForm" class="">
-                <div class="">
-                    <div class="mb-3">
-                        <input required class="form-control bg-gray-100" type="file" id="img">
-                    </div>
-                    <p class="text-white">Name Category:</p>
-                    <div class="mb-2">
-                        <input required type="text" class="form-control bg-gray-100" placeholder="name category" value="${get.name}" id="name">
-                    </div>
+        <div class="w-[1100px] mx-auto flex space-x-20 ">
+          <div class="">
+            <img class="h-[250px] w-[250px] border-4 rounded-lg" id="idImg" src="" alt="Waitting....">
+          </div>
+          <form id="idForm" class="w-[700px]">
+            <div class="">
+                <div class="mb-3">
+                    <input required class="form-control bg-gray-100" type="file" id="img">
                 </div>
-                <div class="text-center button_shell_control">
-                    <button type="submit" class="button_control w-44">Continue</button>
+                <p class="text-white">Name Category:</p>
+                <div class="mb-2">
+                    <input required type="text" class="form-control bg-gray-100" placeholder="name category" value="${get.name}" id="name">
                 </div>
-            </form>
+            </div>
+            <div class="text-center button_shell_control">
+                <button type="submit" class="button_control w-44">Continue</button>
+            </div>
+          </form>
         </div>
     `;
 };

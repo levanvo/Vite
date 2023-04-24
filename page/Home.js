@@ -43,9 +43,9 @@ const Home=()=>{
                         </div>
                     </div>
                 </div>
-                <div class="w-[340px] rounded-full h-[450px] mt-[26px] text-black mr-[25px] relative">
-                    <div class="img_profile_home"><img class="w-[300px] rounded-full h-[400px] top-[25px] left-[35px] absolute" src="${get_pf.image}"></div>
-                        
+                
+                <div class=" rounded-full mt-[26px] text-black mr-[25px] relative box_image">
+                    <div class="img_profile_home"><img class="w-[280px]  h-[380px] top-[25px] left-[35px] absolute" src="${get_pf.image}"></div>
                 </div>
             </div>
         </div>

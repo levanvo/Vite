@@ -303,7 +303,7 @@ useEffect(function(){
                         <td><img class="w-[170px] h-[80px] rounded-md mx-auto" src="${
                           got.img[0]
                         }"></td>
-                        <td><p class="mt-[23px] w-[330px]"></p>${got.content.slice(0,50)}...</td>
+                        <td><p class="mt-[23px] w-[330px]"></p>${got.content.slice(0,30)}...</td>
                         <td class="">
                           <p class="mt-[27px]"></p>
                           <button type="button" class="btn btn-danger remove_pr" data-id="${

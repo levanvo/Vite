@@ -1,100 +1,82 @@
 {
   "projects": [
     {
-      "name": "name 1",
+      "id": 1,
+      "name": "Cây Folia - Mĩ",
       "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681747858/img_assigment/phat-tai-nui1_iw3uir.webp"
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682140584/img_assigment/images_2_tciopq.jpg"
       ],
-      "author": "a -1",
-      "content": "c -1",
-      "select": "7",
-      "time": "23:10`:59____17/4/2023",
-      "id": 1
+      "author": "John",
+      "content": "Nếu bạn thích các loại cây thân gỗ trồng trong nhà để làm cây trang trí nhưng chưa biết chọn loại cây nào cho phù hợp, hãy liên hệ với Vườn Ươm Số 1. Chúng tôi sẽ giúp bạn tìm được loại cây phù hợp và cách chăm sóc chúng thật tốt.",
+      "select": "1",
+      "time": "12:16`:26____22/6/2023"
     },
     {
-      "name": "name 2",
+      "name": "Cây Malisa",
       "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681747949/img_assigment/cay-kim-ngan-than-go-trong-duoc-trong-nha_dazjql.jpg"
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682140672/img_assigment/t%E1%BA%A3i_xu%E1%BB%91ng_6_bhbvxr.jpg"
       ],
-      "author": "a -2",
-      "content": "c- 2",
-      "select": "6",
-      "time": "23:12`:30____17/4/2023",
+      "author": "Tom-chosion",
+      "content": "Với diện tích nhỏ, bạn chỉ cần trồng một cây thân gỗ cũng có thể tạo mảng xanh cho không gian sống của mình rồi. Nếu có diện tích lớn hơn, bạn có thể trồng cây thân gỗ lớn kèm theo 3 – 5 chậu cây nhỏ để gia tăng sự đa dạng hệ thực vật.",
+      "select": "1",
+      "time": "12:17`:55____22/4/2023",
       "id": 2
     },
     {
-      "name": "name 3",
+      "name": "Cây cọ dầu",
       "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681747971/img_assigment/t%E1%BA%A3i_xu%E1%BB%91ng_6_suqtdj.jpg"
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682140895/img_assigment/cay-co-duoi-ngua-than-go-trong-duoc-trong-nha_wat1f3.jpg"
       ],
-      "author": "a -3",
-      "content": "c -3",
-      "select": "9",
-      "time": "23:12`:53____17/4/2023",
+      "author": "Maxfell",
+      "content": "Thường được trồng phối hợp với các tiểu cảnh đồi núi, tôn lên vẻ đẹp núi đồi nhân tạo, ngoài ra có thể trồng cây kết hợp với các tiểu cảnh khô, cây thân gỗ trồng ban công, trước nhà, bên hiên nhà, sân thượng cũng rất hợp lý.\n\nNgoài ra đây cũng là một loại cây cảnh trồng trong nhà rất được ưa chuộng và thường trồng trong chậu sứ đẹp, đặt trong phòng, trang trí ngôi nhà ở, văn phòng làm việc cũng khá đẹp mắt.",
+      "select": "2",
+      "time": "12:21`:37____22/4/2023",
       "id": 3
     },
     {
-      "name": "name 6",
+      "name": "Nho dại",
       "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681780357/img_assigment/%E1%BA%A2nh_ch%E1%BB%A5p_m%C3%A0n_h%C3%ACnh_2023-04-13_203259_himq9x.png"
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682141009/img_assigment/258883339-3076482412679001-6800872299603031550-n-2021_ftlghm.jpg"
       ],
-      "author": "a 6",
-      "content": "c -6",
-      "select": "6",
-      "time": "8:12`:39____18/4/2023",
+      "author": "Dantce-Fell",
+      "content": "Nho là một loại quả mọng lấy từ các loài cây thân leo thuộc chi Nho. Quả nho mọc thành chùm từ 6 đến 300 quả, chúng có màu đen, lam, vàng, lục, đỏ-tía hay trắng.",
+      "select": "3",
+      "time": "12:23`:32____22/4/2023",
+      "id": 4
+    },
+    {
+      "name": "Bưởi Australia",
+      "img": [
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682141089/img_assigment/1_qz166g.webp"
+      ],
+      "author": "Janie",
+      "content": "Cách bảo quản bưởi tốt nhất là để trong ngăn mát tủ lạnh nhiệt độ 7-10 độ C để đảm bảo độ tươi ngon. Tránh để ở nhiệt độ thường bưởi sẽ dễ bị hỏng. Bưởi hồng ...\n",
+      "select": "3",
+      "time": "12:24`:52____22/4/2023",
       "id": 5
-    },
-    {
-      "name": "name 7",
-      "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681826119/img_assigment/t%E1%BA%A3i_xu%E1%BB%91ng_6_dnve9v.jpg"
-      ],
-      "author": "a -7",
-      "content": "c -7",
-      "select": "10",
-      "time": "20:55`:20____18/4/2023",
-      "id": 6
-    },
-    {
-      "name": "name 12",
-      "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681912213/img_assigment/kh%E1%BA%BF_qjpf72.webp"
-      ],
-      "author": "a -12",
-      "content": "c -12",
-      "select": "6",
-      "time": "20:50`:15____19/4/2023",
-      "id": 7
     }
   ],
   "category": [
     {
-      "name": "Thực vật 2",
+      "name": "Cây thân gỗ",
       "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681747254/img_assigment/NgaiCuu_ocxzi9.jpg"
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682139936/img_assigment/Linde_von_linn_grbzxq.jpg"
       ],
-      "id": 6
+      "id": 1
     },
     {
-      "id": 7,
-      "name": "Thực vật 1",
+      "name": "Cây cảnh",
       "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681747415/img_assigment/images_2_saaina.jpg"
-      ]
-    },
-    {
-      "name": "Thực vật 3",
-      "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681747925/img_assigment/kh%E1%BA%BF_ojpdzm.webp"
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682140829/img_assigment/cay-bang-singapore-than-go-trong-duoc-trong-nha_1_xnab5l.jpg"
       ],
-      "id": 9
+      "id": 2
     },
     {
-      "id": 10,
-      "name": "Thực vật 4",
+      "name": "Cây ăn quả",
       "img": [
-        "https://res.cloudinary.com/darnprw0q/image/upload/v1681825803/img_assigment/cay-su-trang-trong-nha_ldgd1u.jpg"
-      ]
+        "https://res.cloudinary.com/darnprw0q/image/upload/v1682140945/img_assigment/kh%E1%BA%BF_x8fq8m.webp"
+      ],
+      "id": 3
     }
   ],
   "background": [],
