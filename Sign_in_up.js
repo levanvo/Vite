@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Header, useEffect, useState } from './component/Setup'
 
 const Sign_in_up = () => {
