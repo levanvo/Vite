@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "run": "vite",
+    "dev": "vite",
     "json": "json-server --watch db.json --port 3000",
-    "dev": "concurrently \"npm run json\" \"npm run run\"",
+    "run": "concurrently \"npm run json\" \"npm run run\"",
     "build": "vite build",
     "preview": "vite preview"
   },
