@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
     "concurrently": "^8.0.1",
     "navigo": "^8.11.1",
     "vite": "^4.3.4"
