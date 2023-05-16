@@ -1,5 +1,5 @@
 
-import { Header, useEffect, useState } from './component/Setup'
+import { Header, useEffect } from './component/Setup'
 
 const Sign_in_up = () => {
     useEffect(()=>{
