@@ -2,7 +2,7 @@ import Sign_in_up from "./Sign_in_up";
 import AdminAddCt from "./admin/AdminAddCt";
 import AdminAddPr from "./admin/AdminAddPr";
 import AdminEditCt from "./admin/AdminEditCt";
-import AdminEditPf from "./admin/AdminEditPF";
+import AdminEditPf from "./admin/AdminEditPf";
 import AdminEditPr from "./admin/AdminEditPr";
 import AdminPost from "./admin/AdminPost";
 import { render, router } from "./component/Setup";
@@ -43,4 +43,6 @@ const Not=function(){
     `
   }
   router.notFound(render(Not,app));
+
+  
 router.resolve();
